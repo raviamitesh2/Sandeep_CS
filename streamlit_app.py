@@ -33,4 +33,4 @@ def load_html_file():
 # Load and display HTML
 html_content = load_html_file()
 if html_content:
-    st.components.v1.html(html_content, height=None, scrolling=True)
+    st.components.v1.html(html_content, height=2000, scrolling=True)
