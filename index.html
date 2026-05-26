@@ -737,6 +737,85 @@
             color: var(--gold);
         }
 
+        /* Founder Image Section */
+        .founder-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .founder-image-container {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .founder-image-wrapper {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(29, 132, 128, 0.25);
+            transition: all 0.3s ease;
+            border: 3px solid var(--primary);
+        }
+
+        .founder-image-wrapper:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(29, 132, 128, 0.35);
+        }
+
+        .founder-image-wrapper img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .founder-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 0.7rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .founder-info {
+            text-align: center;
+            width: 100%;
+        }
+
+        .founder-name {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .founder-title {
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .founder-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 100%;
+        }
+
         /* Map Container */
         .map-container {
             margin-top: 2rem;
@@ -776,6 +855,15 @@
             .about-content,
             .contact-content {
                 grid-template-columns: 1fr;
+            }
+
+            .founder-section {
+                margin-top: 2rem;
+            }
+
+            .founder-image-wrapper {
+                max-width: 300px;
+                margin: 0 auto;
             }
 
             .section-title {
@@ -901,22 +989,20 @@
                     <p>Established under ICSI (Institute of Company Secretaries of India) regulations, our team specializes in Corporate Compliance, Governance, and Business Registration with a focus on delivering excellence and reliability.</p>
                     <p>With over 8 years of industry experience, we have successfully served 500+ clients and established ourselves as a trusted partner for startups, SMEs, and established enterprises.</p>
                 </div>
-                <div class="stats fade-in">
-                    <div class="stat-item">
-                        <div class="stat-number">8+</div>
-                        <div class="stat-label">Years of Experience</div>
+                <div class="founder-section fade-in">
+                    <div class="founder-image-container">
+                        <div class="founder-image-wrapper">
+                            <img src="sandeep.jpg" alt="R Sandeep - Founder & Company Secretary" loading="lazy">
+                            <div class="founder-badge">
+                                <i class="fas fa-check-circle"></i>
+                                CS Certified
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Clients Served</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">Core Service Areas</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">GST Verified</div>
+                    <div class="founder-info">
+                        <div class="founder-name">R Sandeep</div>
+                        <div class="founder-title">Founder & Company Secretary</div>
+                        <p class="founder-description">Expert in Corporate Compliance, Governance, and Legal Advisory with ICSI certification and 8+ years of industry experience.</p>
                     </div>
                 </div>
             </div>
